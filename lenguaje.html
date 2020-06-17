@@ -1,147 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Involucionados Template</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+    <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <title>Document</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
 
     <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-        .slider {
-            width: auto;
-            margin: 30px 50px 50px;
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
         }
-        
-        .slick-slide {
-            background: yellow;
-            color: black;
-            padding: 40px 0;
-            font-size: 30px;
-            font-family: "Arial", "Helvetica";
-            text-align: center;
-        }
-        
-        .slick-prev:before, 
-        .slick-next:before {
-            color: white;    
-        }
-        
-        .slick-dots {
-            bottom: -30px;
-        
-        }
-        
-        
-        .slick-slide:nth-child(odd) {
-             background: blueviolet;
-             color: white;
-        }
-        
-        
-            </style>
-        
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        
-            <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-</head>
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-dark">
+          <a class="navbar-brand text-white" href="#">
+              <img src="images/LogoFreeClass_Mesa de trabajo 1.jpg" width="30" height="30"
+                  class="d-inline-block align-top" alt="" loading="lazy">
+              FreeClass
+          </a>
+      </nav>
+  </header>
 
-<body>
-    <main class="principal">
-        <div class="header">
-            <header class="bg-dark">
-                <nav>
-                    <a href="login.html">
-                        <img src="images/LogoFreeClass_Mesa de trabajo 1.jpg" width="40" height="40" id="logo">
-                    </a>
-                    <h3 class="text-white" id="textInicio">
-                        Lenguaje
-                    </h3>
-                    <img src="images/perfil.jpg" class="fotoperfil" style="float: right;">
-                </nav>
-            </header>
+  <div class="sidebar">
+    <div class="sidecon">
+        <a class=" btn btn-dark btn-block mt-3" href="perfil.html">Mi Perfil</a>
+        <a class=" btn btn-dark btn-block mt-3" href="cursos.html">Asignaturas</a>
+        <a class=" btn btn-dark btn-block mt-3" href="">Mi Espacio</a>
+        <a class=" btn btn-dark btn-block mt-3" href="">Chat</a>
+        <a class=" btn btn-dark btn-block mt-3" href="">Nosotros</a>
+        <a class=" btn btn-dark btn-block mt-3" href="">Contacto</a>
+        <a class=" btn btn-dark btn-block mt-3" href="">Mi Perfil</a>
+        <a class=" btn btn-danger btn-block mt-3" href="login.html" data-fancybox data-animation-duration="700"
+            data-src="#cs" id="cerrarSession">Cerrar Session</a>
+        <div style="display: none;" id="cs" class="animated-modal">
+            <h2 class="text-center text-white">Cerrando Session</h2>
+            <p class="text-center text-white">Saliendo...</p>
+            <svg width="150" height="150" viewBox="0 0 510 510" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="#fff" d="M150.45,206.55l-35.7,35.7L229.5,357l255-255l-35.7-35.7L229.5,285.6L150.45,206.55z M459,255c0,112.2-91.8,204-204,204 S51,367.2,51,255S142.8,51,255,51c20.4,0,38.25,2.55,56.1,7.65l40.801-40.8C321.3,7.65,288.15,0,255,0C114.75,0,0,114.75,0,255 s114.75,255,255,255s255-114.75,255-255H459z"></path>
+            </svg>
         </div>
+    </div>
+</div>
 
-        <div class="sidebar">
-            <div class="sidecon">
-                <a class=" btn btn-dark btn-block mt-3" href="inicio.html">Inicio</a>
-                <a class=" btn btn-dark btn-block mt-3" href="perfil.html">Mi Perfil</a>
-                <a class=" btn btn-dark btn-block mt-3" href="cursos.html">Asignaturas</a>
-                <a class=" btn btn-dark btn-block mt-3" href="">Mi Espacio</a>
-                <a class=" btn btn-dark btn-block mt-3" href="">Chat</a>
-                <a class=" btn btn-dark btn-block mt-3" href="">Nosotros</a>
-                <a class=" btn btn-dark btn-block mt-3" href="">Contacto</a>
-                <a class=" btn btn-danger btn-block mt-3" href="login.html" data-fancybox data-animation-duration="700"
-                    data-src="#cs" id="cerrarSession">Cerrar Session</a>
-                <div style="display: none;" id="cs" class="animated-modal">
-                    <h2 class="text-center text-white">Cerrando Session</h2>
-                    <p class="text-center text-white">Saliendo...</p>
-                    <svg width="150" height="150" viewBox="0 0 510 510" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path fill="#fff" d="M150.45,206.55l-35.7,35.7L229.5,357l255-255l-35.7-35.7L229.5,285.6L150.45,206.55z M459,255c0,112.2-91.8,204-204,204 S51,367.2,51,255S142.8,51,255,51c20.4,0,38.25,2.55,56.1,7.65l40.801-40.8C321.3,7.65,288.15,0,255,0C114.75,0,0,114.75,0,255 s114.75,255,255,255s255-114.75,255-255H459z"></path>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
+<main role="main">
+  <h2>Asignatura: Lenguaje y Comunicación</h2>
+        <h4>En el caso de la asignatura de Lenguaje y Comunicación, las Bases Curriculares han sido agrupadas en tres ejes lectura, escritura y comunicación oral.</h4>
 
-        <div id="contenido">
-            <h1>Asignatura: Lenguaje y Comunicación</h1><br>
-            <h3>En el caso de la asignatura de Lenguaje y Comunicación, las Bases Curriculares han sido agrupadas en tres ejes lectura, escritura y comunicación oral.</h3><br>
-            <h4>
-                Escuchar y hablar, leer y escribir son las actividades que conforman la competencia comunicativa de una persona y se ponen en práctica permanentemente en la vida cotidiana. En las Bases Curriculares y en los Programas de Estudio, estas dimensiones del lenguaje han sido <strong> agrupadas en tres ejes -lectura, escritura y comunicación oral- </strong>que permiten describir los conocimientos, las habilidades y las actitudes involucradas en el logro de la competencia comunicativa. Esta división es artificial y responde solo a la necesidad de presentar una realidad compleja de manera organizada, para destacar los aspectos principales que debe desarrollar el alumno en los primeros seis años de la enseñanza básica y para abordar los contenidos propios de la asignatura, aplicándolos a situaciones reales. No obstante la organización en ejes, se espera que los objetivos se aborden de manera integrada para desarrollar efectivamente las competencias comunicativas.
-            </h4>
-    
-           <section class="slider">
-    
-                <div>Dimensiones del Lenguaje:</div>
-                <div>Escribir</div>
-                <div>Leer</div>
-                <div>Comunicación oral</div>
-    
-                
-            </section>
-           
-            
-        </main>
-    
-        <script>
-            $(".slider").slick({
-               
-                autoplay: true,
-                autoplaySpeed: 1500,
-                arrows: true,
-                dots: false,
-               
-                responsive: [{ 
-                    breakpoint: 500,
-                    settings: {
-                        dots: false,
-                        arrows: false,
-                        infinite: false,
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    } 
-                }]
-            });
-    
-</script>
-
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Lectura</h1>
+            <p>Leer en forma habitual permite ampliar el conocimiento del mundo, reflexionar sobre diferentes temas, formar la sensibilidad estética, alcanzar una mayor comprensión de sí mismo y aprender a ponerse en el lugar de los demás. Por medio de la lectura, los estudiantes participan de una herencia cultural que se conserva y a la vez se transforma, se actualiza y se reinterpreta. Así, adquieren conciencia de ser miembros de una comunidad de lectores con la que comparten un bagaje común, conversan acerca de sus descubrimientos y opiniones y colaboran para crear significados.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sugerencias Bibliográficas</a></p>
+          </div>
         </div>
-        <div class="footer bg-dark text-white">
-            <footer>
-                <p>Created By Involucionados</p>
-            </footer>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Escritura</h1>
+            <p>Escribir es una de las mejores maneras de aclarar y ordenar nuestro pensamiento. A diferencia de la comunicación cara a cara, lo que se busca en la escritura es comunicar algo a un interlocutor que no está presente, por lo que se necesita un esfuerzo especial para que las ideas se expresen de manera coherente. En el texto escrito, es necesario explicar y describir elementos que en la comunicación oral se pueden deducir de claves no verbales -como el tono de voz y el volumen- o del contexto mismo. Esto exige al escritor ponerse en el lugar del destinatario, lo que significa un gran desafío para los alumnos de los primeros años. La idea de que se escribe para algo y para alguien es un principio que orienta al estudiante sobre cómo realizar la tarea.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Actividades Sugeridas</a></p>
+          </div>
         </div>
-    </main>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>Comunicación Oral</h1>
+            <p>Un hablante competente es capaz de comunicar un mismo mensaje de diversas maneras: quienes usan exitosamente el lenguaje manejan un repertorio de recursos que les permite elegir la manera óptima para concretar sus propósitos y, a la vez, mantener relaciones sociales positivas con otros20. Esta propuesta curricular considera que el desarrollo de la comunicación oral es un objetivo central en la educación y pone en relieve que, en la sala de clases, el estudiante es un actor protagónico que utiliza el lenguaje oral como vehículo para comunicar conocimientos, explorar ideas, analizar el mundo que lo rodea y compartir opiniones.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Hablemos</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="js/lenguaje.js"></script>
-</body>
+  <div class="footer bg-dark text-white">
+    <footer>
+        <p>Created By Involucionados</p>
+    </footer>
+</div>
 
+
+ 
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.js"></script><!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 </html>
